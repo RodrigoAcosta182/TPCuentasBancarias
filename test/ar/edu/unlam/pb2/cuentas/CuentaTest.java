@@ -42,5 +42,22 @@ public class CuentaTest {
 		assertEquals(expected, actual);
 				
 	}
+	
+	@Test
+	public void testExtraerConCostoAdicional() {
+		CajaDeAhorro miCaja = new CajaDeAhorro(0001,"Makuton",20000.0);
+		miCaja.extraerDinero(1000.0);
+		miCaja.extraerDinero(1000.0);
+		miCaja.extraerDinero(1000.0);
+		miCaja.extraerDinero(1000.0);
+		miCaja.extraerDinero(1000.0);
+		//extraer dos veces con costo adicional
+		miCaja.extraerDinero(1000.0);
+		miCaja.extraerDinero(1000.0);
+		
+		Double expected = 12988.0;
+		Double actual = miCaja.mostrarSaldo();
+		
+	}
 
 }

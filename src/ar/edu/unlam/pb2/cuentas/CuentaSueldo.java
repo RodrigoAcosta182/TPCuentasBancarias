@@ -30,4 +30,30 @@ public class CuentaSueldo {
 	public Double mostrarSaldo() {
 		return this.saldo;
 	}
+
+	public Integer getCbu() {
+		return cbu;
+	}
+
+	public void setCbu(Integer cbu) {
+		this.cbu = cbu;
+	}
+
+	public String getAlias() {
+		return alias;
+	}
+
+	public void setAlias(String alias) {
+		this.alias = alias;
+	}
+
+	public Double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(Double saldo) {
+		this.saldo = saldo;
+	}
+	
+	
 }
